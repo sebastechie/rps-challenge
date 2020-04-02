@@ -2,12 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    // font-family: 'Courier New', Courier, monospace;
 }
-
-
-
 
 body {
     height: 100vh;
@@ -16,8 +12,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #C2E1D8;
-
+    // background-color: #C2E1D8;
 }
 
 h1 {
@@ -25,7 +20,9 @@ h1 {
     /* border: 2px solid red; */
 }
 
-
+h2 {
+    font-size: 30px;
+}
 
 .container {
     display: flex;
@@ -48,40 +45,47 @@ h1 {
     
 }
 
-
-
 .rps button {
-    border: 1px solid green;
+    border: 3px solid black;
+    background: none;
     width: 30%;
     height: 90%;
     text-align: center; 
+    outline: none;
+
+    &:hover {
+        border: 3px solid aqua;
+        box-shadow: 10px 10px 10px grey;
+        cursor: pointer;
+    }
 }
 
 #rock {
-    background-image: url("./rock.png");
+    // background-image: url("./rock.png");
+    // background-image: url("./images/rock.jpg");
+    background-image: url("./images/rock3.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #paper {
-    background-image: url("./paper.png");
+    // background-image: url("./images/paper.jpg");
+    background-image: url("./images/paper.png");
+
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #scissors {
-    background-image: url("./scissors.png");
+    // background-image: url("./images/scissor.jpg");
+    background-image: url("./images/scissors3.png");
+
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-
-
-
 
 .msg-board {
     border: 2px solid black;
@@ -92,6 +96,10 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    &:hover {
+        cursor: not-allowed;
+    }
 }
 
 .winner {

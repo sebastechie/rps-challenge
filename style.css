@@ -3,8 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 25px;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -23,12 +21,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #C2E1D8;
 }
 
 h1 {
   font-size: 50px;
   /* border: 2px solid red; */
+}
+
+h2 {
+  font-size: 30px;
 }
 
 .container {
@@ -66,28 +67,37 @@ h1 {
 }
 
 .rps button {
-  border: 1px solid green;
+  border: 3px solid black;
+  background: none;
   width: 30%;
   height: 90%;
   text-align: center;
+  outline: none;
+}
+
+.rps button:hover {
+  border: 3px solid aqua;
+  -webkit-box-shadow: 10px 10px 10px grey;
+          box-shadow: 10px 10px 10px grey;
+  cursor: pointer;
 }
 
 #rock {
-  background-image: url("./rock.png");
+  background-image: url("./images/rock3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #paper {
-  background-image: url("./paper.png");
+  background-image: url("./images/paper.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #scissors {
-  background-image: url("./scissors.png");
+  background-image: url("./images/scissors3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,6 +121,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.msg-board:hover {
+  cursor: not-allowed;
 }
 
 .winner {
